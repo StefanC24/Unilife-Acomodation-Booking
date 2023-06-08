@@ -81,6 +81,35 @@ export default function Homepage() {
                 </div>
             </div>
         </div>
+
+        <div className='how-it-works-container'>
+            <div>
+                <div className='how-it-works-children'>
+                    
+                    <img className='how-it-works-children-image' src='./assets/best-selection.png' alt=''></img>
+                   
+                    <div className='how-it-works-text-container'>
+                        <h3 className='how-it-works-header'>Best selection</h3>
+                        <p>Best selection of student accommodations.
+                            <br/> 
+                            Never been easier to find a home that’s right for you.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div className='how-it-works-children'>
+                    <img className='how-it-works-children-image' src='./assets/your-favourite.png' alt=''></img>
+                    <div className='how-it-works-text-container'>
+                        <h3 className='how-it-works-header'>Your favourite</h3>
+                        <p>Shortlist your favourite properties and send enquiries in one click.</p>
+                    </div>
+                </div>
+
+            </div>
+            <img className='user-picture' src='./assets/user-picture.png' alt=''></img>
+        </div>
+
     </div>
   )
 }
