@@ -92,7 +92,10 @@
 
 .why-unilife-header{
     font-family: Epilogue, sans-serif;
-    font-weight: 450;
+    font-weight: 480;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
 .why-unilife-children{
@@ -145,13 +148,12 @@
 
 .how-it-works-container{
     display: flex;
-    margin: 20px 25%;
+    margin: 20px 15%;
+    justify-content: space-around;
 }
 
 .how-it-works-children{
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
 }
 
 .how-it-works-children-image{
