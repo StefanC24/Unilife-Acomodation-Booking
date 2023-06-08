@@ -109,7 +109,8 @@ export default function Homepage() {
             </div>
             <img className='user-picture' src='./assets/user-picture.png' alt=''></img>
         </div>
-
+        <button className='see-all-cities-button'>Search & compare</button>
+        
     </div>
   )
 }

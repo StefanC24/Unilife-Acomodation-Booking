@@ -93,7 +93,6 @@
 .why-unilife-header{
     font-family: Epilogue, sans-serif;
     font-weight: 450;
-    /* margin: 40px 0px; */
 }
 
 .why-unilife-children{
@@ -153,10 +152,6 @@
     display: flex;
     justify-content: center;
     /* align-items: center; */
-}
-
-.how-it-works-text-container{
-
 }
 
 .how-it-works-children-image{
@@ -231,8 +226,19 @@
     .city-card-text{
         font-size: 0.8em;
     }
+    .why-unilife-children{
+        display: flex;
+        flex-direction: column;
+    }
+    .why-unilife-header{
+        margin-bottom: 40px;
+    }
+    .child{
+        margin-bottom: 20px;
+    }
+
     .how-it-works-container{
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -263,6 +269,9 @@
     .cities{
         grid-template-columns: repeat(1, 15em);
         gap: 15px;
+    }
+    .why-unilife-header{
+        font-size: 1em;
     }
 }
     
