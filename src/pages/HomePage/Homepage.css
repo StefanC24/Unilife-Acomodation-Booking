@@ -1,0 +1,233 @@
+.search-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(105, 97, 97, 0.5);
+    /* transform: translateY(-50%); */
+    width: 50%;
+    height: 4em;
+    border-radius: 15px;
+    margin: 30px 25%;
+}
+
+.search_by_city{
+    width: 60%;
+    height: 2em;
+    border: 1px solid #cecece;
+    border-radius: 10px;
+    margin: 0 20px;
+    padding-left: 10px;
+    font-family: Epilogue, sans-serif;
+    color: #CED3D8;
+
+}
+
+.find_homes-button{
+    border: none;
+    border-radius: 6px;
+    padding: 6px 30px;
+    background: #3A5295;
+    margin: 0 20px;
+    color: white;
+    font-weight: 900;
+    font-size: 0.8em;
+    width: fit-content;
+}
+
+.overview{
+    grid-column:  1/span 3;
+    font-family: Epilogue, sans-serif;
+    font-size: large;
+}
+
+.cities{
+    display: grid;
+    grid-template-columns: repeat(3, 20em);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.city-card{
+    height: 15em;
+    border-radius: 20px;
+}
+
+.city-card-text{
+    font-family: Epilogue, sans-serif;
+    font-size: 1em;
+    font-weight: 150;
+    padding: 10px;
+    margin: 25% 0px;
+    text-shadow: #1b284c 0px 0px 20px;
+}
+
+.see-all-cities-button{
+    display: block;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 30px;
+    background: #3A5295;
+    margin: 40px auto;
+    color: white;
+    font-weight: 900;
+    font-size: 0.8em;
+    min-width: 137px;
+    width: fit-content;
+}
+
+.why-unilife-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6FAFD;
+    border-radius: 20px;
+    width: 70%;
+    margin: 40px auto;
+    padding: 40px 0px;
+}
+
+.why-unilife-header{
+    font-family: Epilogue, sans-serif;
+    font-weight: 450;
+    /* margin: 40px 0px; */
+}
+
+.why-unilife-children{
+    display: flex;
+}
+
+.child{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.search{
+    justify-content: center;
+    align-items: center;
+}
+
+.compare{
+    justify-content: center;
+    align-items: center;
+}
+
+.bills-included{
+    justify-content: center;
+    align-items: center;
+}
+
+.child-image{
+    width: 3em;
+    height: 3em;
+    margin-bottom: 10px;
+}
+
+.child-header{
+    font-family: Epilogue, sans-serif;
+    font-size: 1em;
+    font-weight: 450;
+    margin-bottom: 10px;
+}
+
+.child-description{
+    font-family: Epilogue, sans-serif;
+    font-size: 0.8em;
+    font-weight: 150;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px){
+    .search-form{
+        width: 80%;
+        margin: 30px 10%;
+    }
+    .search_by_city{
+        width: 60%;
+        margin-left: 20px;
+    }
+
+    .find_homes-button{
+        min-width: 135px;
+        width: fit-content;
+        margin-right: 20px;
+    }
+    .cities{
+        grid-template-columns: repeat(3, 13em);
+        gap: 19px;
+    }
+    .city-card{
+        height: 12em;
+    }
+    .city-card-text{
+        font-size: 0.9em;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .search-form{
+        width: 80%;
+        margin: 30px 10%;
+    }
+
+    .search_by_city{
+        width: 60%;
+        margin-left: 20px;
+    }
+
+    .find_homes-button{
+        min-width: 135px;
+        width: fit-content;
+        margin-right: 20px;
+    }
+
+    .cities{
+        grid-template-columns: repeat(3, 10em);
+        gap: 15px;
+    }
+    .city-card{
+        height: 10em;
+    }
+    .city-card-text{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .search-form{
+        width: 80%;
+        margin: 30px 10%;
+        height: fit-content;
+    }
+
+    .search_by_city{
+        width: 80%;
+        margin: 5px 0;
+    }
+
+    .find_homes-button{
+        min-width: 135px;
+        width: fit-content;
+        margin: 5px 0;
+    }
+
+    .overview{
+        grid-column:  1/span 1;
+        font-family: Epilogue, sans-serif;
+        font-size: large;
+    }
+
+    .cities{
+        grid-template-columns: repeat(1, 15em);
+        gap: 15px;
+    }
+}
+    

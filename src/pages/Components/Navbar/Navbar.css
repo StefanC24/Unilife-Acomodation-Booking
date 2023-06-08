@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00A2E1;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    width: 9em;
+}
+
+.shortlist-contact_us{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: white;
+}
+
+.shortlist{
+    margin-right: 10px;
+    font-size: small;
+}
+
+.contact_us{
+    font-size: small;
+
+}
