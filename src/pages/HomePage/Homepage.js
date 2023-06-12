@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import axios from 'axios'
 import Header from '../Components/Header'
 import './Homepage.css'
+import AllCities from '../Components/AllCities/AllCities'
+import { Link } from 'react-router-dom'
 
 export default function Homepage() {
 
@@ -59,7 +61,7 @@ export default function Homepage() {
                     ))}
         </div>
         
-        <button className='see-all-cities-button'>See all cities</button>
+        <Link to='/all-cities' className='see-all-cities-button'>See all cities</Link>
 
         <div className='why-unilife-container'>
             <h3 className='why-unilife-header'>Compare all inclusive student homes.</h3>
