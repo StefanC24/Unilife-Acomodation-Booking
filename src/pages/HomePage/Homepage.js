@@ -19,7 +19,7 @@ export default function Homepage() {
 
   return (
     <div className='home-page'>
-        <Header style={{zIndex: '-1'}}/>
+        <Header />
         <form className='search-form'>
             <select className='search_by_city' type='text' placeholder='Search by city'>
                 <option value=''>Search by city</option>

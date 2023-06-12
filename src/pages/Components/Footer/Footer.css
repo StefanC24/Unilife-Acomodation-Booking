@@ -1,0 +1,56 @@
+.footer{
+    background-color: #00A2E1;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 50px 15%;
+}
+
+.footer-header{
+    font-weight: 600;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 10px;
+    width: 60%;
+}
+
+.email-input{
+    height: 35px;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+}
+
+::placeholder{
+    color:#CED3D8;
+    font-size: larger;
+    padding: 0 10px;
+}
+
+.social-media-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 10px;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.link-icon{
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+}
