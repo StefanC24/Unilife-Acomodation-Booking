@@ -1,0 +1,15 @@
+.properties{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 25%;
+    gap: 20px;
+}
+
+.property{
+    border: 1px solid;
+    text-align: center;
+}
+
+.propery-image{
+    width: 100%;
+}

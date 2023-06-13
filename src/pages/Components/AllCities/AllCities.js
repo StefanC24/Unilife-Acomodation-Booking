@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from '../Header'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
+import './AllCities.css'
 
 export default function AllCities() {
     
@@ -20,7 +22,9 @@ export default function AllCities() {
     <div>
         <Header />
         <h3>Search by city</h3>
-        {cities.map(city => <p>{city.name}</p>) }
+        <div className='all-cities'>
+          {cities.map(city => <Link className='city' to={`/properties/city/${city._id}`} key={city._id}>{city.name}</Link>) }
+        </div>
     </div>
   )
 }

@@ -4,6 +4,7 @@ import AllCities from './pages/Components/AllCities/AllCities';
 import Footer from './pages/Components/Footer/Footer';
 import Navbar from './pages/Components/Navbar/Navbar';
 import Homepage from './pages/HomePage/Homepage';
+import IndividualCity from './pages/Components/IndividualCity/IndividualCity';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Homepage/>}/>
-        <Route path='all-cities' element={<AllCities/>}/>
+        <Route path='/cities' element={<AllCities/>}/>
+        <Route path='/properties/city/:id' element={<IndividualCity/>}/>
       </Routes>
       <Footer/>
     </div>

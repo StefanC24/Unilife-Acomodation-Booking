@@ -1,0 +1,19 @@
+.all-cities{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.city{
+    color: black;
+    border: 1px solid #CED3D8;
+    padding: 7% 25%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}

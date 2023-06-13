@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import axios from 'axios'
 import Header from '../Components/Header'
 import './Homepage.css'
-import AllCities from '../Components/AllCities/AllCities'
 import { Link } from 'react-router-dom'
 
 export default function Homepage() {
@@ -11,13 +10,13 @@ export default function Homepage() {
 
     const fetchCities = () => {
         axios.get("https://unilife-server.herokuapp.com/cities")
-        .then(result => setCities(result.data.response))
-        .catch(err => console.log(err))
+            .then(result => setCities(result.data.response))
+            .catch(err => console.log(err))
     }
     useEffect(() => {
         fetchCities()},[])
 
-        console.log(cities)
+        // console.log(cities)
 
   return (
     <div className='home-page'>
@@ -43,8 +42,8 @@ export default function Homepage() {
         <div className='cities'>
             
             <h3 className='overview'>Student accomodation in our cities</h3>
-                {cities.slice(0, 9).map(city => (
-                    <div 
+                {cities.slice(0, 9).map(city => 
+                    <Link to={`/properties/city/${city._id}`} 
                         className='city-card' 
                         key={city._id} 
                         style={{
@@ -57,11 +56,11 @@ export default function Homepage() {
                             <h2>{city.name}</h2>
                             <p>{city.property_count} properties</p>
                         </div>
-                    </div>
-                    ))}
+                    </Link>
+                    )}
         </div>
         
-        <Link to='/all-cities' className='see-all-cities-button'>See all cities</Link>
+        <Link to='/cities' className='see-all-cities-button'>See all cities</Link>
 
         <div className='why-unilife-container'>
             <h3 className='why-unilife-header'>Compare all inclusive student homes.</h3>
