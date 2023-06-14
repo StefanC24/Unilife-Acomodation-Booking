@@ -18,13 +18,14 @@ export default function IndividualCity() {
 
     useEffect(()=>{
         getIndividualCity()
+        // eslint-disable-next-line
     }, [])
     
     return (
         <div className='properties'>
             {properties?.map(property => 
                 <div className='property' key={property._id}>
-                    <img className='propery-image' src={property.images[0]}></img>
+                    <img className='propery-image' src={property.images[0]} alt={property.property_type}></img>
                     <p>{property.property_type}</p>
                 </div>
             )}
