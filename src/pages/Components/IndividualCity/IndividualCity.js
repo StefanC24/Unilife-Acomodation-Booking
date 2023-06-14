@@ -47,7 +47,7 @@ export default function IndividualCity() {
                                     <h4>{property.furnished}</h4>
                                 </div>
                                 <img className='map-pin' src={path + '/assets/map-pin.png'} alt='location-pin'></img> 
-                                <label>{`${property.address.street} ${property.address.city} ${property.address.postcode}`}</label>
+                                <label>{`${property.address.street}, ${property.address.city}, ${property.address.postcode}`}</label>
                             </div>
                         </div>
                     )}
