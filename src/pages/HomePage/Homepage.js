@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import axios from 'axios'
-import Header from '../Components/Header'
 import './Homepage.css'
 import { Link } from 'react-router-dom'
 
@@ -20,7 +19,6 @@ export default function Homepage() {
 
   return (
     <div className='home-page'>
-        <Header />
         <form className='search-form'>
             <select className='search_by_city' type='text' placeholder='Search by city'>
                 <option value=''>Search by city</option>

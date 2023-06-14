@@ -1,15 +1,65 @@
+.results{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 25%;
+}
+
 .properties{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 20px 25%;
     gap: 20px;
 }
 
 .property{
-    border: 1px solid;
+    border: 1px solid #ccc;
+    border-radius: 20px;
     text-align: center;
+    box-shadow: 0 -3 1px 0 rgba(0,0,0,0.2);
+    max-width: 300px;
 }
 
 .propery-image{
     width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.property-stats{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    background: #3A5295;
+    color: white;
+
+}
+
+.bath-bedroom-count{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.bedroom-count, .bathroom-count{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.property-description{
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 0 15px;
+}
+
+.property-type{
+    display: flex;
+    justify-content: space-between;
+}
+
+.map-pin{
+    width: 10px;
+    margin: 12px 10px 0 5px;
+}
+
+label{
+    margin-bottom: 20px;
 }
