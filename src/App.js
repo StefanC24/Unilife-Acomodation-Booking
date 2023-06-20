@@ -6,17 +6,20 @@ import Navbar from './pages/Components/Navbar/Navbar';
 import Homepage from './pages/HomePage/Homepage';
 import IndividualCity from './pages/Components/IndividualCity/IndividualCity';
 import Header from './pages/Components/Header';
+import CityContextProvider from './Context/CityContext';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Header/>
-      <Routes>
-        <Route path='/' element={<Homepage/>}/>
-        <Route path='/cities' element={<AllCities/>}/>
-        <Route path='/properties/city/:id' element={<IndividualCity/>}/>
-      </Routes>
+      <CityContextProvider>
+        <Routes>
+          <Route path='/' element={<Homepage/>}/>
+          <Route path='/cities' element={<AllCities/>}/>
+          <Route path='/properties/city/:id' element={<IndividualCity/>}/>
+        </Routes>
+      </CityContextProvider>
       <Footer/>
     </div>
   );

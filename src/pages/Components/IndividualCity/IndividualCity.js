@@ -1,7 +1,8 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import './IndividualCity.css'
+import { CityContext } from '../../../Context/CityContext';
 
 export default function IndividualCity() {
 
@@ -10,12 +11,14 @@ export default function IndividualCity() {
     const { id } = useParams()
     const [properties, setProperties] = useState()
 
+    const {city} = useContext(CityContext)
+
     const getIndividualCity = () =>{
         axios.get(`https://unilife-server.herokuapp.com/properties/city/${id}`)
         .then(result=>setProperties(result.data.response))
         .catch(err=>console.log(err))
     }
-
+        console.log(city)
     useEffect(()=>{
         getIndividualCity()
         // eslint-disable-next-line
@@ -52,6 +55,15 @@ export default function IndividualCity() {
                         </div>
                     )}
                 </div>
+                            <div className='life-in-city'>
+                                <div>
+                                    <h3>Being a student in {}</h3>
+                                    <p>{city[0].student_life}</p>
+                                </div>
+                                <div>
+
+                                </div>
+                            </div>
             </div>
     )
 }
