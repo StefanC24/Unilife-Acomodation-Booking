@@ -1,6 +1,9 @@
 import React from 'react'
 import './Footer.css'
 export default function Footer() {
+
+    const path = process.env.PUBLIC_URL;
+
   return (
     <div className='footer'>
         <div className='contact-container'>
@@ -11,15 +14,15 @@ export default function Footer() {
         <div className='social-media-links'>
             <h2 className='footer-header'>Let's Socialize</h2>
             <a className='link' href='facebook.com' >
-                <img className='link-icon' src='./assets/facebook-icon.png' alt='facebook icon'></img>
+                <img className='link-icon' src= {path +'/assets/facebook-icon.png'} alt='facebook icon'></img>
                 Facebook
             </a>
             <a className='link' href='twitter.com'>
-                <img className='link-icon' src='./assets/twitter.png' alt='twitter icon'></img>
+                <img className='link-icon' src={path +'/assets/twitter.png'} alt='twitter icon'></img>
                 Twitter
             </a>
             <a className='link' href='instagram.com' >
-                <img className='link-icon' src='./assets/instagram-icon.png' alt='instagram icon'></img>
+                <img className='link-icon' src={path +'/assets/instagram-icon.png'} alt='instagram icon'></img>
                 Instagram
             </a>
         </div>

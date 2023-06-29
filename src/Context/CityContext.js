@@ -5,14 +5,14 @@ export const  CityContext = createContext()
 
 const CityContextProvider = (props)=>{
     
-    const [city, setCity] = useState()
+    const [cities, setCity] = useState()
 
     useEffect(()=>{
-        axios.get(`https://unilife-server.herokuapp.com/cities`)
+        axios.get(`https://unilife-server.herokuapp.com/cities?limit=100`)
         .then(result => setCity(result.data.response))
     },[])
 
-    const context = {city}
+    const context = {cities}
 
     return(
         <CityContext.Provider value={context}>

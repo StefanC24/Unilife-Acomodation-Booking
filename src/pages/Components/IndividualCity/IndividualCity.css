@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1500px;
+    max-width: 80%;
     margin: 20px auto;
 }
 
@@ -10,8 +10,8 @@
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 60px;
-    column-gap: 50px;
+    row-gap: 40px;
+    column-gap: 30px;
 }
 
 .property{
@@ -20,6 +20,8 @@
     text-align: center;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
     justify-self: center;
+    max-height: 500px;
+    max-width: 400px;
 }
 
 .propery-image{
@@ -33,7 +35,11 @@
     padding: 0 15px;
     background: #3A5295;
     color: white;
+}
 
+.propery-stats-image{
+    width: 1em;
+    height: auto;
 }
 
 .bath-bedroom-count{
@@ -57,17 +63,117 @@
     justify-content: space-between;
 }
 
+.property-h4-text{
+    font-size: 0.7rem;
+    margin: 10px 0 0 0
+}
+
+.location{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .map-pin{
-    width: 10px;
-    margin: 12px 10px 0 5px;
+    max-width: 15px;
+    max-height: 15px;
 }
 
-label{
-    margin-bottom: 20px;
+.label{
+    font-size: 0.7em;
+    margin-bottom: 15px;
 }
 
+.view-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #CED3D8;
+    padding: 5px 0;
+}
+
+.life-in-city{
+    display: flex;
+    margin: 50px auto;
+    align-items: center;
+    background-color: #F6FAFD;
+    border-radius: 24px;
+    padding: 40px 30px;
+}
+
+.being_a_student_text{
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center; */
+    width: 50%;
+    margin-right: 15px;
+}
+
+.students_photo{
+    max-width: 50%;
+    margin-left: 15px;
+}
+
+.group_photo{
+    width: 100%;
+}
+
+@media screen and (max-width: 700px){
+    .properties{
+        grid-template-columns: repeat(2, 50%);
+        row-gap: 40px;
+        column-gap: 30px;   
+    }
+    .property{
+        max-width: 320px;
+        max-height: 440px;
+    }
+
+    .life-in-city{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .being_a_student_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0px 10px;
+        text-align: left;
+    }
+
+    .students_photo{
+        max-width: 100%;
+        margin-left: 15px;
+    }
+
+}
 @media screen and (max-width: 500px){
     .properties{
         grid-template-columns: repeat(1, 100%);
+    }
+
+    .life-in-city{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .being_a_student_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0px 10px;
+        text-align: left;
+    }
+
+    .students_photo{
+        max-width: 100%;
+        margin-left: 15px;
     }
 }
